@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="topBar">
+            <h1>Gaming<span class="color2">Dojo</span></h1>
+            <ul class="options">
+                <li> <select class="select">
+                        <option value="">Euro €</option>
+                        <option value="opcion1">PesosCol $</option>
+                        <option value="opcion3">USD $</option>
+                    </select>
+                </li>
+                <li><img id="carrito" src="./images/cart-light2.png" width="40" height="40" alt="carrito"></li>
+                <li id="contador">
+                    <h2><u>0</u></h2>
+                </li>
+                <li><img src="./images/search-light.png" width="30" height="30" alt="buscar"></li>
+            </ul>
+        </div>
+        <div class="titulo">
+            <h2>Highlights</h1>
+        </div>
+        <div class="slide">
+            <button style="background: none; border: none;" id="boton-derecha" onclick="moverIzquierda()"><img
+                    src="./images/chevron-left.png" alt="izquierda"></button>
+            <div id="slide-container">
+                <img id="imagen1" src="./images/stonepunk.png" alt="stonePunk">
+                <img id="imagen3" src="./images/pixel-ninjas-2.png" alt="pixelNinjas">
+                <img id="imagen2" src="./images/cafe-neko.png" alt="cafe-neko">
+                <img id="imagen4" src="./images/3-1000x400-sarahjulianne.com.jpg" alt="luna">
+            </div>
+            <button style="background: none; border: none;" id="boton-derecha" onclick="moverDerecha()"><img
+                    src="./images/chevron2.png" alt="derecha"></button>
+        </div>
+        <div class="contenidoInferior">
+            <div class="div1">
+                <img src="./images/cafe-neko.png" width="350" height="130" alt="neko">
+                <h3>Cafe Neko:Gold Edition</h3>
+                <div class="iconsDiv1">
+                    <img src="./images/windows.png" width="50" height="50"alt="windows">
+                    <img src="./images/apple.png" width="50" height="50" alt="apple">
+                </div>
+                <div class="butonDiv1">
+                    <button id="descu">-20%</button>
+                    <div class="content">
+                    <p><del><span style="opacity: 0.5" text-decoration: line-through;>€14.98</span></del></p>
+                    <h3> €10.49</h3>
+                    </div>
+                    <button  onclick="incrementarContador()" id="compra">Buy</button>
+                </div>
+            </div>
+            <div class="div2">
+                <img src="./images/pixel-ninjas-2.png" width="350" height="130" alt="ninja">
+                <h3>pixel ninjas 2</h3>
+                <div class="iconsDiv2">
+                    <img src="./images/windows.png"width="50" height="50" alt="windows">
+                    <img src="./images/apple.png" width="50" height="50"alt="apple">
+                </div>
+                <div class="butonDiv2">
+                    <button id="descu">-10%</button>
+                    <div class="content">
+                    <p><del><span style="opacity: 0.5" text-decoration: line-through;>€8.19</span></del></p>
+                    <h3> €7.39</h3>
+                    </div>
+                    <button  onclick="incrementarContador()" id="compra">Buy</button>
+                </div>
+            </div>
+            <div class="div3">
+                <img src="./images/stonepunk.png" width="350" height="130" alt="punk">
+                <h3>Stonepunk 10000BCE</h3>
+                <div class="iconsDiv3">
+                    <img src="./images/windows.png" width="50" height="50"alt="windows">
+                    <img src="./images/apple.png" width="50" height="50"alt="apple">
+                    <img src="./images/linux.png" width="50" height="50" onclick="mostrarAlerta()"alt="linux">
+                    <div id="miAlerta" class="alerta">
+                        <h3>¡This game is supported on linux</h3>
+                        <button onclick="cerrarAlerta()">OK</button>
+                    </div>
+                </div>
+                <div class="butonDiv3">
+                    <button id="descu" >NEW</button>
+                    <div class="content">
+                    <h3> €19.99</h3>
+                    </div>
+                    <button  onclick="incrementarContador()" id="compra">Buy</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="scriptExa.js"></script>
+</body>
+
+</html>

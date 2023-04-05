@@ -1,0 +1,226 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+.main {
+    font-family: 'Roboto', sans-serif;
+
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.topBar {
+    color: white;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    border: 4px solid black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.select {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+}
+
+.topBar h1 {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.color2 {
+    color: rgb(55, 0, 128);
+}
+
+.titulo {
+    margin-left: 100px;
+}
+
+.options {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: end;
+    position: absolute;
+    right: 50px;
+}
+
+#carrito {
+    margin-right: -20px;
+}
+
+#prev-button {
+    margin-left: 50px;
+}
+
+.options li {
+    margin: 20px;
+    list-style: none;
+}
+
+.slide {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 45%;
+}
+
+#slide-container {
+    display: flex;
+    overflow-x: hidden;
+    width: 80%;
+    height: auto;
+
+}
+
+#slide-container img {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.contenidoInferior {
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.div1 {
+    width: 350px;
+    height: 350px;
+}
+
+.div2 {
+    margin-left: 50px;
+    width: 350px;
+    height: 350px;
+}
+
+.div3 {
+    margin-left: 50px;
+    width: 350px;
+    height: 350px;
+}
+
+.contenidoInferior.imagenDiv1 {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+.content {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.butonDiv1 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.butonDiv2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.butonDiv3 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.iconsDiv1 {
+    cursor: pointer;
+}
+
+.iconsDiv2 {
+    cursor: pointer;
+}
+
+.iconsDiv3 {
+    cursor: pointer;
+}
+
+#compra {
+    color: white;
+    background-color: rgb(137, 184, 62);
+    width: 60px;
+    height: 40px;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+
+#descu {
+    color: white;
+    background-color: rgb(237, 98, 241);
+    width: 60px;
+    height: 40px;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+    margin-right: 20px;
+
+
+}
+
+.alerta {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid blue;
+    text-align: center;
+    display: none;
+}
+
+.alerta button {
+    margin-top: 50px;
+    color: black;
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    font-weight: bolder;
+    border: 3px solid rgb(11, 111, 241);
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+}
